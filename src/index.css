@@ -12,23 +12,35 @@ code {
     monospace;
 }
 
-
-.navbarContainer{
-
-  width: 93%;
-  background-color: #FFFFFF;
-  height: 64px;
-  padding: 0 64px 0 64px;
+.navbar-root-container{
+  display: grid;
   align-items: center;
-  display: flex;
-  position: sticky;
   justify-content: center;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); 
+  grid-template-columns: repeat(12, 1fr);
+  gap: 100px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.16);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  position: sticky;
 }
 
-.navbarContainer .logo img{
+.navbarContainer{
+  width: 100%;
+  grid-column: 2/11;
+  height: 64px;
+  padding: 0 64px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.navbarContainer .logo{
   margin-right: auto;
+  margin-left:3.5%;
+  margin-top:5px ;
+}
+.navbarContainer .logo img{
+  margin-right: 50%;
   width: 123px;
   height: 23px;
 
@@ -38,29 +50,134 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: auto;
+  flex-direction: row;
+  gap: 24px; 
 }
-
 
 .loginButton {
-  background-color: transparent; /* Butonun içi başlangıçta transparan */
-  border: 1px solid #333333; /* Dış çerçeve başlangıçta normal boyutta */
-  border-radius: 8px; /* Border radius 8px */
+  background-color: white;
+  border: 1px solid #333333;
+  border-radius: 8px;
   padding: 7px 13px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
-  color: #7B7B7B; /* Yazı rengi */
+  color: #5B5B5B;
   cursor: pointer;
-  
+  position: relative;
+  transition:  0.1s ease; 
 }
+
+
+.loginButton:hover::before {
+  width: 120%;
+  height: 120%;
+  background-color: transparent;
+}
+
+.loginButton:hover {
+  border: 1px solid #333333;
+  padding: 10px 16px; 
+}
+
+
 .signupButton {
   background-color: #FA0050; 
-  border: 1px solid #FA0050; /* Dış çerçeve başlangıçta normal boyutta */
-  border-radius: 8px; /* Border radius 8px */
+  border: 1px solid #FA0050; 
+  border-radius: 8px; 
   padding: 7px 13px;
   font-size: 15px;
   font-weight: bold;
-  color: #FFFFFF; /* Yazı rengi */
+  color: #FFFFFF; 
   cursor: pointer;
-  
+  position: relative;
+  transition:  0.1s ease;
 }
+
+.signupButton:hover::before {
+  width: 120%;
+  height: 120%;
+  background-color: transparent;
+}
+
+.signupButton:hover {
+  
+  padding: 10px 16px; 
+}
+
+.buttonGroup .selector{
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.languageSelected{
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1A1A1A;
+  margin: 0 4px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.navbarRightIcons{
+  margin-top: 4px;
+  flex: 0;
+  margin-left: 16px;
+}
+
+.card-right-icon{
+  min-width: 44px;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: auto;
+}
+
+.card-right-icons{
+  cursor: pointer;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.navbar-bcg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ;
+  border-radius: 10px;
+  width: 80px;
+  height: 40px;
+}
+
+.navbar-bcgc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-bcg:hover {
+  background-color: #f5f5f5; 
+}
+
+.right-bcg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+.right-bcgc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-bcg:hover {
+  background-color: #f5f5f5; 
+}
+
+
