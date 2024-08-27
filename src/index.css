@@ -11,3 +11,56 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.navbarContainer{
+
+  width: 93%;
+  background-color: #FFFFFF;
+  height: 64px;
+  padding: 0 64px 0 64px;
+  align-items: center;
+  display: flex;
+  position: sticky;
+  justify-content: center;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); 
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.navbarContainer .logo img{
+  margin-right: auto;
+  width: 123px;
+  height: 23px;
+
+}
+
+.navbarContainer .buttonGroup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+
+
+.loginButton {
+  background-color: transparent; /* Butonun içi başlangıçta transparan */
+  border: 1px solid #333333; /* Dış çerçeve başlangıçta normal boyutta */
+  border-radius: 8px; /* Border radius 8px */
+  padding: 7px 13px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #7B7B7B; /* Yazı rengi */
+  cursor: pointer;
+  
+}
+.signupButton {
+  background-color: #FA0050; 
+  border: 1px solid #FA0050; /* Dış çerçeve başlangıçta normal boyutta */
+  border-radius: 8px; /* Border radius 8px */
+  padding: 7px 13px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF; /* Yazı rengi */
+  cursor: pointer;
+  
+}
