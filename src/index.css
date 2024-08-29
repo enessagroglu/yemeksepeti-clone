@@ -182,6 +182,7 @@ code {
 }
 
 .main-container{
+  
   border: 0;
   font: inherit;
   margin: 0;
@@ -204,6 +205,7 @@ code {
 }
 
 .main-content-container{
+  margin-top: 20%;
   grid-column: 1/7;
   align-self: stretch;
   
@@ -225,12 +227,11 @@ code {
   display: flex;
   border-radius: 16px;
   margin-left: 24%;
-  height: 70px;
+  height: 80px;
+  width: 85%;
   align-items: center;
   background-color: white;
-  
-  
-  
+  box-shadow: 0 .188rem 1.25rem rgba(0, 0, 0, .1);
 }
 
 .search-container{
@@ -239,12 +240,12 @@ code {
   padding: 0;
   vertical-align: baseline;
   background: white;
-  box-shadow: 0 .188rem 1.25rem rgba(0, 0, 0, .1);
   flex-wrap: nowrap;
-  width: 80%;
+  width: 90%;
   border-radius: 8px;
   margin-left: 14px;
   border: 1px solid #DCDCDC;
+  display: flex;
 }
 
 .input-box{
@@ -264,5 +265,87 @@ code {
   width: 60%;
   z-index: 1;
 } 
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+/* Floating Label Styles */
+.search-container label {
+  position: absolute;
+  top: 57%;
+  left: 16%;
+  font-size: 0.75rem;
+  color: black;
+  font-weight: 500;
+  pointer-events: none;
+  transition: all 0.2s ;
+  z-index: 0;
+  opacity: 0;
+}
+
+.input-box:focus + label,
+.input-box:not(:placeholder-shown) + label {
+  top: 57%;
+  left: 16%;
+  font-size: 0.75rem;
+  color: #333333;
+  opacity: 1;
+  z-index: 1;
+  background-color: white;
+}
+
+.discoverButton {
+  background-color: #FA0050; 
+  border: 1px solid #FA0050; 
+  border-radius: 8px; 
+  padding: 7px 13px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFFFFF; 
+  cursor: pointer;
+  position: relative;
+  transition:  0.1s ease;
+  margin-left: 3% ;
+  height: 38px;
+  margin-right: 3%;
+}
+
+.discoverButton:hover::before {
+  width: 120%;
+  height: 120%;
+  background-color: transparent;
+}
+
+.discoverButton:hover {
+  padding: 10px 16px; 
+}
+
+.find-location-container{
+  margin-left: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  cursor: pointer;
+  color: #333333;
+  
+}
+
+.find-location-container:hover{
+  color: #CD004E;
+}
+
+.target-icon{
+  fill: #B7194B;
+}
+
+.find-location-label{
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: inherit;
+  margin: 0 4px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 
