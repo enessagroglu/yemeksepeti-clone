@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 
 export default function PartnerContent() {
     const handleClick = () => {
-        window.location.href ="https://partner.yemeksepeti.com/s/?language=tr&countryIsoCode=TR"
+        window.open("https://partner.yemeksepeti.com/s/?language=tr&countryIsoCode=TR", "_blank");
     };
   return (
     <>
