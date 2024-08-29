@@ -2,6 +2,7 @@ import "./index.css";
 import Navbar from "./components/Navbar.jsx";
 import MainContent from "./components/MainContent.jsx";
 import PartnerContent from "./components/PartnerContent.jsx";
+import Cities from "./components/Cities.jsx";
 
 function App() {
   return (
@@ -15,7 +16,9 @@ function App() {
       <section className="partner-content-root">
         <PartnerContent />
       </section>
-      sa
+      <section className="cities-section">
+        <Cities />
+      </section>
     </>
   );
 }
