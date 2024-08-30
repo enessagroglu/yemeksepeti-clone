@@ -4,6 +4,7 @@ import MainContent from "./components/MainContent.jsx";
 import PartnerContent from "./components/PartnerContent.jsx";
 import Cities from "./components/Cities.jsx";
 import MobileApp from "./components/MobileApp.jsx";
+import HomeHowTo from "./components/HomeHowTo.jsx";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <section className="sections">
         <Cities />
         <MobileApp />
+        <HomeHowTo />
       </section>
     </>
   );
