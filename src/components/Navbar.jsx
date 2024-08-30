@@ -1,4 +1,11 @@
+import React, { useState } from 'react';
+import Modal from './LoginModal'; 
+
 export default function Navbar() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
   return (
     <>
       <div className="navbar-root-container">
@@ -25,10 +32,10 @@ export default function Navbar() {
           </nav>
           <div className="buttonGroup">
             <div className="login">
-              <button className="loginButton">Giriş Yap</button>
+            <button className="loginButton" onClick={openModal}>Giriş Yap</button>
             </div>
             <div className="sign-up">
-              <button className="signupButton">Kayıt Ol</button>
+            <button className="signupButton" onClick={openModal}>Kayıt Ol</button>
             </div>
 
             <span>
@@ -99,6 +106,7 @@ export default function Navbar() {
             </span>
           </div>
         </div>
+        <Modal isOpen={isModalOpen} onClose={closeModal} />
       </div>
     </>
   );
