@@ -462,9 +462,8 @@ textarea:focus, input:focus{
   background-color: #d80347;
 }
 
-.cities-section{
-  margin-top: 0;
-  transform: translateY(-25%)
+.sections{
+  transform: translateY(-15%);
 }
 
 .cities-h1{
@@ -491,7 +490,7 @@ textarea:focus, input:focus{
 .city-list{
   grid-row: auto;
   grid-column: 1/13;
-  margin-left: 5%;
+  margin-left: 6%;
 }
 
 .card {
@@ -525,7 +524,7 @@ textarea:focus, input:focus{
 }
 
 .card:hover figure img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .card a figure figcaption {
@@ -553,4 +552,234 @@ textarea:focus, input:focus{
   padding: 8px 16px;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.app-h1{
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.3125;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 32px;
+  grid-column: 1/7;
+}
+
+.mobile-app{
+  margin-top: 4%;
+}
+
+.download-grid{
+  
+  grid-column: 1 / -1;
+  border: 0;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  background: #ea004b;
+  border-radius: 16px;
+  margin-bottom: 80px;
+  width: 92%;
+
+}
+
+.download-grid-child{
+  height: 400px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+@media (min-width: 960px) {
+  .download-grid-child-left {
+      grid-column: span 3;
+      
+  }
+}
+
+
+@media (min-width: 1264px) {
+  .download-content{
+      padding-bottom: 48px;
+      padding-left: 32px;
+      padding-top: 48px;
+      margin-left: 3%;
+  }
+}
+
+@media (min-width: 960px) {
+  .download-content{
+      padding-bottom: 24px;
+      padding-bottom: 32px;
+      padding-right: 0;
+      padding-top: 24px;
+      padding-top: 32px;
+      text-align: left;
+  }
+}
+
+@media (min-width: 528px) {
+  .download-content {
+      padding-left: 24px;
+      padding-right: 24px;
+  }
+}
+
+.download-content .partner-content-h1{
+  color: #ffffff;
+  width: 90%;
+}
+
+.content-subtitle{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-description{
+  display: flex;
+}
+
+@media (min-width: 1264px) {
+  .content-description {
+      margin-bottom: 24px;
+      flex-direction: row;
+  }
+}
+
+@media (min-width: 960px) {
+  .content-description {
+      justify-content: flex-start;
+      margin-bottom: 16px;
+      flex-direction: row;
+  }
+}
+
+.content-QR-container {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  display: none;
+  max-height: 88px;
+  max-width: 88px;
+}
+
+@media (min-width: 960px) {
+  .content-QR-container {
+      display: flex;
+      margin-right: 24px;
+  }
+}
+
+.content-QR {
+  max-height: 75px;
+  max-width: 75px;
+  padding: 8px;
+}
+
+.content-description-text{
+  padding: 0 0 12px 0;
+  white-space: break-spaces;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #ffffff;
+
+}
+
+@media (min-width: 960px) {
+  .content-description-text {
+      max-width: 344px;
+  }
+}
+
+
+@media (min-width: 1264px) {
+  .stores {
+      margin: 0 0 16px;
+  }
+}
+
+@media (min-width: 960px) {
+  .stores {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-start;
+    margin-bottom: 3%;
+  }
+}
+
+.stores a{
+  max-height: 40px;
+  color: #fa0050;
+  cursor: pointer;
+  transition: color .1s linear;
+  background-color: transparent;
+}
+
+.stores a:hover{
+  text-decoration: none;
+}
+
+.download-grid-child-right{
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 960px) {
+  .download-grid-child-right {
+      grid-column: span 3;
+      position: relative;
+  }
+}
+
+@media (min-width: 1264px) {
+  .app-download-image {
+      background-size: auto 512px;
+      margin-top: -92px;
+      min-height: 512px;
+  }
+}
+
+@media (min-width: 960px) {
+  .app-download-image {
+      background-position-x: left;
+      background-size: auto 412px;
+      background-size: auto 441px;
+      height: 100%;
+      margin-bottom: 0;
+      margin-top: -51px;
+      margin-top: -56px;
+      min-height: 412px;
+      min-height: 441px;
+      position: absolute;
+      text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .app-download-image {
+      height: 320px;
+  }
+}
+
+@media (min-width: 528px) {
+  .app-download-image {
+      height: 360px;
+  }
+}
+
+.app-download-image {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 260px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.app-download-image img {
+  position: relative;
+  height: 560px;
+  background-size: contain;
+  transform: translateY(-60px);
 }
