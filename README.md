@@ -1,4 +1,5 @@
 Bu proje Techcareer.net WebWave: Front-End Bootcamp Bitirme Projesi kapsaminda yapilmistir. Proje *henuz* responsive degildir.
+React-HTML-CSS kullanilmistir. 
 
 ![image](https://github.com/user-attachments/assets/c833d102-f2aa-4a69-9d71-eb7c6a831f01)
 
