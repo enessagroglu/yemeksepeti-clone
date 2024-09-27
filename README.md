@@ -1,5 +1,4 @@
-Bu proje Techcareer.net WebWave: Front-End Bootcamp Bitirme Projesi kapsaminda yapilmistir. Proje *henuz* responsive degildir.
-React-HTML-CSS kullanilmistir. 
+This project was developed as part of the Techcareer.net WebWave: Front-End Bootcamp Final Project. It is an exact clone of yemeksepeti.com and is not yet responsive. React, HTML, and CSS were used.
 
 ![image](https://github.com/user-attachments/assets/c833d102-f2aa-4a69-9d71-eb7c6a831f01)
 
